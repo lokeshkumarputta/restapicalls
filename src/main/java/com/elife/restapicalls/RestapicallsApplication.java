@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RestapicallsApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Application started ");
 		SpringApplication.run(RestapicallsApplication.class, args);
+		
 	}
 }
