@@ -55,9 +55,9 @@ public class RestapiCallingController {
 	@RequestMapping(value = "/api/sfapicalling", method = RequestMethod.GET, produces = "application/json")
 	public String salesForceCustomerData() {
 		String response = null;
-		// Step 1 : to Generate the token and other stuff we need to hit the Ouath URL.
+		// Step 1 : Generate token and other stuff we need to hit the Ouath URL.
 		// Step 2 : Once hit the response will genearate as json with Access_token and other stuff
-		// Step 3 : Use String tokenizer and take the token and pass to POST method to get the response.
+		// Step 3 : Use String operation and get the token value and pass to POST method to get the response.
 		String sfServerUrl = "";
 		
 		response = restTemplate.postForObject(sfServerUrl, null, String.class);
