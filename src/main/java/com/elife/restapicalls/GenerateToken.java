@@ -12,7 +12,6 @@ public class GenerateToken {
 
 	public static void main(String[] args) {
 		try {
-
 			String access_token = generateToken();
 			System.out.println("access_token in  Response ::" + access_token);
 		} catch (Exception e) {

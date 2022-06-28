@@ -27,7 +27,6 @@ public class RestapiCallingController {
 		return new RestTemplate();
 	}
 
-	
 	@Value("${serviceurl.api}")
 	String serviceUrl;
 
