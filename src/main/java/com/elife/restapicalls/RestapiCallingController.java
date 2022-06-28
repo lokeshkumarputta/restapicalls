@@ -28,12 +28,12 @@ public class RestapiCallingController {
 	}
 
 	@Value("${serviceurl.api}")
-	String serviceUrl;
+	String serviceUrl; //http://localhost:9292/userservice/displayorders?category=clothes
 
 	@Value("${foundryServerUrl}")
 	String foundryServerUrl;
 
-	@ApiOperation(value = "getMethodCalling")
+	@ApiOperation(value = "getOrdersBasedOnCategory")
 	@RequestMapping(value = "/api/get", method = RequestMethod.GET)
 	public String getMethodCalling() {
 		return restTemplate.getForObject(serviceUrl, String.class);
